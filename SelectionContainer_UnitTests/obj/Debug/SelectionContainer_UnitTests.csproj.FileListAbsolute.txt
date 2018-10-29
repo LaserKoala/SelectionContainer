@@ -1,0 +1,17 @@
+C:\Alex\Working\C#\Projects\Lab_6_SelectionContainer\SelectionContainer_UnitTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Alex\Working\C#\Projects\Lab_6_SelectionContainer\SelectionContainer_UnitTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Alex\Working\C#\Projects\Lab_6_SelectionContainer\SelectionContainer_UnitTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Alex\Working\C#\Projects\Lab_6_SelectionContainer\SelectionContainer_UnitTests\bin\Debug\SelectionContainer_UnitTests.dll
+C:\Alex\Working\C#\Projects\Lab_6_SelectionContainer\SelectionContainer_UnitTests\bin\Debug\SelectionContainer_UnitTests.pdb
+C:\Alex\Working\C#\Projects\Lab_6_SelectionContainer\SelectionContainer_UnitTests\bin\Debug\Lab_6_SelectionContainer.exe
+C:\Alex\Working\C#\Projects\Lab_6_SelectionContainer\SelectionContainer_UnitTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\Alex\Working\C#\Projects\Lab_6_SelectionContainer\SelectionContainer_UnitTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\Alex\Working\C#\Projects\Lab_6_SelectionContainer\SelectionContainer_UnitTests\bin\Debug\Lab_6_SelectionContainer.pdb
+C:\Alex\Working\C#\Projects\Lab_6_SelectionContainer\SelectionContainer_UnitTests\bin\Debug\Lab_6_SelectionContainer.exe.config
+C:\Alex\Working\C#\Projects\Lab_6_SelectionContainer\SelectionContainer_UnitTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\Alex\Working\C#\Projects\Lab_6_SelectionContainer\SelectionContainer_UnitTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\Alex\Working\C#\Projects\Lab_6_SelectionContainer\SelectionContainer_UnitTests\obj\Debug\SelectionContainer_UnitTests.csprojAssemblyReference.cache
+C:\Alex\Working\C#\Projects\Lab_6_SelectionContainer\SelectionContainer_UnitTests\obj\Debug\SelectionContainer_UnitTests.csproj.CoreCompileInputs.cache
+C:\Alex\Working\C#\Projects\Lab_6_SelectionContainer\SelectionContainer_UnitTests\obj\Debug\SelectionContainer_UnitTests.csproj.CopyComplete
+C:\Alex\Working\C#\Projects\Lab_6_SelectionContainer\SelectionContainer_UnitTests\obj\Debug\SelectionContainer_UnitTests.dll
+C:\Alex\Working\C#\Projects\Lab_6_SelectionContainer\SelectionContainer_UnitTests\obj\Debug\SelectionContainer_UnitTests.pdb
