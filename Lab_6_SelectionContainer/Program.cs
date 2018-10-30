@@ -11,6 +11,7 @@ namespace Lab_6_SelectionContainer
         static void Main(string[] args)
         {
             
+
         }
     }
 }

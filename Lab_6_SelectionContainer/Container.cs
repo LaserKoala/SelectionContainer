@@ -12,8 +12,14 @@ namespace Lab_6_SelectionContainer
     {
         private readonly ConcurrentDictionary<Guid,IEnumerable> registeredElements = new ConcurrentDictionary<Guid, IEnumerable>();
 
+
         public Guid Register(IEnumerable element)
         {
+            if (element == null)
+            {
+                throw new ArgumentNullException("Null element");
+            }
+
             var id = Guid.NewGuid();
 
             if (!registeredElements.TryAdd(id, element))
@@ -24,21 +30,27 @@ namespace Lab_6_SelectionContainer
             return id;
         }
 
+
         public IEnumerable<TType> Select<TType>(Guid id, int skip, int take)
         {
             if ((take <= 0)
                 || (skip < 0))
             {
-                throw new ArgumentException("Incorrect skip or take");
+                throw new ArgumentOutOfRangeException("Incorrect skip or take");
             }
 
             if (id.Equals(Guid.Empty))
             {
-                throw new ArgumentException("Empty id");
+                throw new ArgumentNullException("ID is empty");
             }
 
-            var selection = new BlockingCollection<object>();
-            foreach(var element in registeredElements[id])
+            if (!registeredElements.ContainsKey(id))
+            {
+                throw new ArgumentException("There is no element with such ID");
+            }
+
+            var selectionContainer = new BlockingCollection<TType>();
+            foreach(var element in registeredElements[id].Cast<TType>())
             {
                 if (skip > 0)
                 {
@@ -48,11 +60,11 @@ namespace Lab_6_SelectionContainer
 
                 if (take > 0)
                 {
-                    selection.Add(element);
+                    selectionContainer.Add(element);
                     take--;
                 }
             }
-            return (IEnumerable<TType>)selection;
+            return selectionContainer;
         }
        
     }

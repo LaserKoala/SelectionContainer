@@ -5,3 +5,10 @@ C:\Alex\Working\C#\Projects\Lab_6_SelectionContainer\Lab_6_SelectionContainer\ob
 C:\Alex\Working\C#\Projects\Lab_6_SelectionContainer\Lab_6_SelectionContainer\obj\Debug\Lab_6_SelectionContainer.csproj.CoreCompileInputs.cache
 C:\Alex\Working\C#\Projects\Lab_6_SelectionContainer\Lab_6_SelectionContainer\obj\Debug\Lab_6_SelectionContainer.exe
 C:\Alex\Working\C#\Projects\Lab_6_SelectionContainer\Lab_6_SelectionContainer\obj\Debug\Lab_6_SelectionContainer.pdb
+C:\Alex\Working\C#\Projects\SelectionContainer\Lab_6_SelectionContainer\bin\Debug\Lab_6_SelectionContainer.exe.config
+C:\Alex\Working\C#\Projects\SelectionContainer\Lab_6_SelectionContainer\bin\Debug\Lab_6_SelectionContainer.exe
+C:\Alex\Working\C#\Projects\SelectionContainer\Lab_6_SelectionContainer\bin\Debug\Lab_6_SelectionContainer.pdb
+C:\Alex\Working\C#\Projects\SelectionContainer\Lab_6_SelectionContainer\obj\Debug\Lab_6_SelectionContainer.csprojAssemblyReference.cache
+C:\Alex\Working\C#\Projects\SelectionContainer\Lab_6_SelectionContainer\obj\Debug\Lab_6_SelectionContainer.csproj.CoreCompileInputs.cache
+C:\Alex\Working\C#\Projects\SelectionContainer\Lab_6_SelectionContainer\obj\Debug\Lab_6_SelectionContainer.exe
+C:\Alex\Working\C#\Projects\SelectionContainer\Lab_6_SelectionContainer\obj\Debug\Lab_6_SelectionContainer.pdb
