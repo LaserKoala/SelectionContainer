@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28010.2046
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab_6_SelectionContainer", "Lab_6_SelectionContainer\Lab_6_SelectionContainer.csproj", "{494CF824-338D-4995-B906-7E957EE54200}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SelectionContainer", "Lab_6_SelectionContainer\SelectionContainer.csproj", "{494CF824-338D-4995-B906-7E957EE54200}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SelectionContainer_UnitTests", "SelectionContainer_UnitTests\SelectionContainer_UnitTests.csproj", "{A8E83544-51A5-41C0-9C45-7068B0FEFD58}"
 EndProject

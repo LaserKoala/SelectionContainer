@@ -49,17 +49,18 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Registration_Tests.cs" />
-    <Compile Include="Selection_Tests.cs" />
+    <Compile Include="RegistrationTests.cs" />
+    <Compile Include="RemoveAndClearTests.cs" />
+    <Compile Include="SelectionTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Lab_6_SelectionContainer\Lab_6_SelectionContainer.csproj">
+    <ProjectReference Include="..\Lab_6_SelectionContainer\SelectionContainer.csproj">
       <Project>{494cf824-338d-4995-b906-7e957ee54200}</Project>
-      <Name>Lab_6_SelectionContainer</Name>
+      <Name>SelectionContainer</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />

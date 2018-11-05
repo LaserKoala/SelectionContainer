@@ -3,14 +3,20 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Collections.Concurrent;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace Lab_6_SelectionContainer
+namespace SelectionContainer
 {
     public class Container
     {
         private readonly ConcurrentDictionary<Guid,IEnumerable> registeredElements = new ConcurrentDictionary<Guid, IEnumerable>();
+
+        public int Count
+        {
+            get
+            {
+                return registeredElements.Count;
+            }
+        }
 
 
         public Guid Register(IEnumerable element)
@@ -21,10 +27,9 @@ namespace Lab_6_SelectionContainer
             }
 
             var id = Guid.NewGuid();
-
             if (!registeredElements.TryAdd(id, element))
             {
-                id = Guid.Empty;
+                return Guid.Empty;
             }
 
             return id;
@@ -33,39 +38,26 @@ namespace Lab_6_SelectionContainer
 
         public IEnumerable<TType> Select<TType>(Guid id, int skip, int take)
         {
-            if ((take <= 0)
-                || (skip < 0))
+            if (!registeredElements.TryGetValue(id, out var elements))
             {
-                throw new ArgumentOutOfRangeException("Incorrect skip or take");
+                return new List<TType>();
+            }
+            if (elements as IEnumerable<TType> == null)
+            {
+                return new List<TType>();
             }
 
-            if (id.Equals(Guid.Empty))
-            {
-                throw new ArgumentNullException("ID is empty");
-            }
-
-            if (!registeredElements.ContainsKey(id))
-            {
-                throw new ArgumentException("There is no element with such ID");
-            }
-
-            var selectionContainer = new BlockingCollection<TType>();
-            foreach(var element in registeredElements[id].Cast<TType>())
-            {
-                if (skip > 0)
-                {
-                    skip--;
-                    continue;
-                }
-
-                if (take > 0)
-                {
-                    selectionContainer.Add(element);
-                    take--;
-                }
-            }
-            return selectionContainer;
+            return (elements as IEnumerable<TType>).Skip(skip).Take(take);
         }
-       
+
+        public bool Remove(Guid id)
+        {
+            return registeredElements.TryRemove(id, out var value);
+        }
+
+        public void Clear()
+        {
+            registeredElements.Clear();
+        }
     }
 }
